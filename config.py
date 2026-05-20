@@ -33,8 +33,17 @@ STATUS_THRESHOLDS = {
 CHANGE_DETECTION = {
     "major_change_threshold": 40,    # Percentage - major layout changes
     "moderate_change_threshold": 20, # Percentage - moderate changes
-    "pixel_diff_threshold": 30       # Pixel value difference threshold
+    "pixel_diff_threshold": 55       # Pixel value difference threshold
 }
+
+# Visual Explainability Settings
+ENABLE_VISUAL_OUTPUTS = True
+OUTPUT_DIR = "outputs"
+MORPH_KERNEL_SIZE = 5
+MIN_CONTOUR_AREA = 500
+OVERLAY_ALPHA = 0.3
+BOUNDING_BOX_COLOR = (0, 0, 255)
+BOUNDING_BOX_THICKNESS = 2
 
 # API Settings
 API = {
